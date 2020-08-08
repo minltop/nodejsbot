@@ -101,6 +101,7 @@ client.on('message', (message) => {
       {name: '신 스카트라 서버', desc: 'vs sever : 10ms'},
 
     ];
+    
     let commandStr = '';
     let embed = new Discord.RichEmbed()
       .setAuthor('= 신 스카트라 상태 =', helpImg)
