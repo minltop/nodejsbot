@@ -32,13 +32,15 @@ client.on('ready', () => {
 client.on('message', (message) => {
   if(message.content == '!신 스카트라 상태') {
     message.channel.send('정상 작동 중 입니다.');
-
-  if(message.content === 'ping2') {
-    message.channel.send('pong2');
-  }
-
   }
 });
+
+client.on('message', (message) => {
+  if(message.content == '!신 스카트라 말해') {
+    message.channel.send('말');
+  }
+});
+
 
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild;
