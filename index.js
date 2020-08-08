@@ -87,17 +87,17 @@ client.on('message', (message) => {
     message.channel.send(embed)
 
 
-  } else if(message.content == '!혈소판아 상태') {
+  } else if(message.content == '!신 스카트라 상태') {
     let helpImg = 'https://cdn.discordapp.com/attachments/677771821386432513/731108732431237140/117787afaa0298ea67088fc13a9b6a48.jpg';
     let commandList = [
-      {name: '혈소판 정신 상태', desc: '매우 정상'},
-      {name: '혈소판 버전', desc: 'V.0.1.0'},
-      {name: '혈소판 서버', desc: 'vs sever : 10ms'},
+      {name: '신 스카트라 정신 상태', desc: '매우 정상'},
+      {name: '신 스카트라 버전', desc: 'V.0.1.0'},
+      {name: '신 스카트라 서버', desc: 'vs sever : 10ms'},
 
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('= 혈소판 상태 =', helpImg)
+      .setAuthor('= 신 스카트라 상태 =', helpImg)
       .setColor('#186de6')
       .setFooter(`제작 : minltop official`)
       .setTimestamp()
