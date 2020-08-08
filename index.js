@@ -30,8 +30,12 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
-  if(message.content == '!혈소판아 상태') {
-    message.reply('정상 작동 중 입니다.');
+  if(message.content == '!신 스카트라 상태') {
+    message.channel.send('정상 작동 중 입니다.');
+
+  if(message.content === 'ping2') {
+    message.rchannel.send('pong2');
+  }
 
   }
 });
