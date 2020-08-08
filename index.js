@@ -10,7 +10,7 @@ client.on('ready', () => {
   console.log('켰다.');
   client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
 
-  let state_list = ['정상 작동','신 스카트라 1서버ㅣ정상작동','신 스카트라 2서버ㅣ정상작동',]
+  let state_list = ['정상 작동','신 스카트라 1서버ㅣ정상작동중','신 스카트라 2ㅣ정상작동중',]
   let state_list_index = 1;
   let change_delay = 5000;
 
