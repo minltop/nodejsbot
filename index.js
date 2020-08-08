@@ -95,6 +95,12 @@ client.on('message', (message) => {
       {name: '신 스카트라 서버', desc: 'vs sever : 10ms'},
 
     ];
+    let commandList = [
+      {name: '신 스카트라 정신 상태', desc: '매우 정상'},
+      {name: '신 스카트라 버전', desc: 'V.0.1.0'},
+      {name: '신 스카트라 서버', desc: 'vs sever : 10ms'},
+
+    ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
       .setAuthor('= 신 스카트라 상태 =', helpImg)
