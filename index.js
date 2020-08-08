@@ -34,7 +34,7 @@ client.on('message', (message) => {
     message.channel.send('정상 작동 중 입니다.');
 
   if(message.content === 'ping2') {
-    message.rchannel.send('pong2');
+    message.channel.send('pong2');
   }
 
   }
@@ -62,7 +62,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content == 'ping') {
-    return message.reply('pong');
+    return message.channel.send('pong');
   }
 
   if(message.content == 'embed') {
