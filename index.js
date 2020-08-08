@@ -10,9 +10,9 @@ client.on('ready', () => {
   console.log('켰다.');
   client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
 
-  let state_list = ['[공지] 서버에서 비신사적','[공지] 행위를 하는 유저를','[공지] 발견시 신고해주시면','[공지] 제재해 드리겠습니다','신 스카트라 1서버:정상작동','신 스카트라 2서버:정상작동','신 스카트라 3서버:서버중지']
+  let state_list = ['[공지] 게임도중에 비신사적','[공지] 행위를 하는 유저를','[공지] 발견시 신고해주시면','[공지] 제재해 드리겠습니다','신 스카트라 1서버:정상작동','신 스카트라 2서버:정상작동','신 스카트라 3서버:서버중지']
   let state_list_index = 1;
-  let change_delay = 5000;
+  let change_delay = 4000;
 
   function changeState() {
     setTimeout(() => {
