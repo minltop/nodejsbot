@@ -10,7 +10,7 @@ client.on('ready', () => {
   console.log('켰다.');
   client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
 
-  let state_list = ['정상 작동','신 스카트라 1ㅣ정상작동중','신 스카트라 2ㅣ정상작동중',]
+  let state_list = ['[공지] 서버에서 비신사적','[공지] 행위를 하는 유저를','[공지] 발견시 신고해주시면','[공지] 제재해 드리겠습니다','신 스카트라 1서버:정상작동','신 스카트라 2서버:정상작동','신 스카트라 3서버:서버중지']
   let state_list_index = 1;
   let change_delay = 5000;
 
@@ -79,36 +79,6 @@ client.on('message', (message) => {
       .setFooter('제작 : minltop official')
 
     message.channel.send(embed)
-
-
-
-
-
-  } else if(message.content == '!도움말') {
-    let helpImg = 'https://cdn.discordapp.com/attachments/677771821386432513/731108732431237140/117787afaa0298ea67088fc13a9b6a48.jpg';
-    let commandList = [
-      {name: '!혈소판아 (내용)', desc: '혈소판이 답을 해줍니다'},
-      {name: '!혈소판아 상태', desc: '혈소판의 상태를 알려줍니다'},
-    ];
-    let commandStr = '';
-    let embed = new Discord.RichEmbed()
-      .setAuthor('= 혈소판 도움말 =', helpImg)
-      .setColor('#186de6')
-      .setFooter(`제작 : minltop official`)
-      .setTimestamp()
-
-   
-    
-    commandList.forEach(x => {
-      commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`;
-    });
-
-    embed.addField('Commands: ', commandStr);
-
-    message.channel.send(embed) 
-
-
-
 
 
   } else if(message.content == '!혈소판아 상태') {
